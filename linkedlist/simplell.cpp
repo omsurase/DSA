@@ -1,22 +1,27 @@
 #include<iostream>
 using namespace std;
 
-struct Node 
+struct node
 {
-    int data;
-    Node *address;
-    Node (int x)
+    int x;
+    node *next;
+    node(int a)
     {
-        data = x;
-        address = NULL;
+        x =a;
+        next = NULL;
     }
-
 };
 
 int main ()
 {
-    Node *N1 =new Node(10);
-    Node *n2= new Node(20);
-    N1->address = n2;
+    node *head = new node(10);
+    head -> next = new node(20);
+    head -> next -> next = new node(30);
+
+    while (head != NULL)
+    {
+        cout<<head->x<<endl;
+        head=head->next;
+    }
     return 0;
 }
