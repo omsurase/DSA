@@ -12,17 +12,17 @@ struct node
     }
 };
 
-void search (int a , node* head, int counter)
+int search (int a , node* head)
 {
     if (head->data==a)
     {
-        cout<<counter<<endl;
-        return;
+        return 0;
     }
     else
     {
-        counter++;
-        search ( a, head->next,counter);
+        int res=0;
+        res = search ( a, head->next);
+        return(res+1);
     }
 }
 
@@ -33,6 +33,7 @@ int main()
     head->next->next = new node(30);
     head->next->next->next = new node(40);
     head->next->next->next->next = new node(50);
-    search(20 , head, 0);
+    int res= search(20 , head);
+    cout<<res<<endl;
     return 0;
 }
