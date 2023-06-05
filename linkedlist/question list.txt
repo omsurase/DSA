@@ -1,0 +1,2 @@
+list of questions that need to be revised
+1.reverse a linked list -- (https://leetcode.com/problems/reverse-linked-list/)
