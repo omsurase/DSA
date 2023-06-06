@@ -1,4 +1,4 @@
 list of questions that need to be revised related to linkedlist
-1.reverse a linked list -- (https://leetcode.com/problems/reverse-linked-list/)
+1.reverse a linked list -- (https://leetcode.com/problems/reverse-linked-list/)(https://github.com/omsurase/DSA/blob/main/linkedlist/reverseSLLiterative.cpp)
 2.add 2 numbers -- (https://leetcode.com/problems/add-two-numbers)
 3.get nth node from end using 2 pointer(revise both approached)--(https://github.com/omsurase/DSA/blob/main/linkedlist/getNthNodeFromEndSLLUsing2pointers.cpp)
