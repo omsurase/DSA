@@ -1,0 +1,1 @@
+ cout<<balance[y]<<endl;
