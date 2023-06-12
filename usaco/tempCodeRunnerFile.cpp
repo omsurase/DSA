@@ -1,1 +1,1 @@
- cout<<balance[y]<<endl;
+cout<<s[n]<<endl;
