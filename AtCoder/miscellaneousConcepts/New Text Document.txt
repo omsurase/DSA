@@ -1,0 +1,1 @@
+dynamic programming ==> find max or min across all possible cases
