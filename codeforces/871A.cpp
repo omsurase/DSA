@@ -14,7 +14,7 @@ int main ()
         {
             if(s[i]!=c[i]) counter++;
         }
-        cout<<counter;
+        cout<<counter<<endl;
     }
     return 0;
 }
