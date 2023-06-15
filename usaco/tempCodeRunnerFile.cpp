@@ -1,1 +1,1 @@
-cout<<s[n]<<endl;
+cout<<e<<endl;
