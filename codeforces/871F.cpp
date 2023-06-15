@@ -8,6 +8,12 @@ int main ()
     {
         int nodes,edges;
         cin>>nodes>>edges;
+        if (nodes==0) 
+        {
+            cout<<"0 0"<<endl;
+            return 0;
+        }
+        
         vector<vector<int>> snowflake(nodes+1);
         for (int i = 0 ; i < edges; i++)
         {
@@ -20,15 +26,14 @@ int main ()
         int index = 0, m = 1000;
         for (int i = 1 ; i < nodes+1; i++)
         {
-            if (snowflake[i].size() < m) { 
+            if (snowflake[i].size() == 1) { 
             m = snowflake[i].size();
             index = i;
         }
              
         }
-        //cout <<snowflake[index][m-1]<<" "<< m<<endl;
-        int size2 = snowflake[snowflake[index][m-1]].size()-1;
         
+        int size2 = snowflake[snowflake[index][m-1]].size()-1;
         int count2=0;
         for (int i = 1 ; i < nodes+1; i++)
         {
