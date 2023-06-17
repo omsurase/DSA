@@ -4,7 +4,7 @@ int main ()
 {
     int a;
     cin >>a;
-    int arr[a]={0};
+    int arr[a];
     int i = 0;
     for (i = 0 ; i < a ; i++)
     {
@@ -16,9 +16,7 @@ int main ()
     {
         vect[j]=arr[i-1];
         cout<<"hi";
-        j++;
-        if (arr[i-1] > arr[i])
-        {
+        ++j;
             if (arr[i-1]-arr[i]>1)
             { 
                 int b = arr[i-1]--;
@@ -35,10 +33,7 @@ int main ()
                 }
                 
             }
-        }
-        else if(arr[i-1] < arr[i])
-        {
-            if (arr[i]-arr[i-1]>1)
+            else if (arr[i]-arr[i-1]>1)
             { 
                 int b = arr[i-1]++;
                 while (arr[i]-b>1)
@@ -54,7 +49,7 @@ int main ()
                 }
                 
             }
-        }
+        
      
     }
 
