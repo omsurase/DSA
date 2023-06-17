@@ -10,7 +10,8 @@ int main ()
 
     for(int i = 2; i < 15; i++)
     {
-        prefix[i] = 1*(pow(2,(i-1)));
+       
+       
     }
     prefix[14]=5001;
     //for(int i = 0 ; i < 15 ; i++) cout<<i<<" "<<prefix[i]<<endl;
