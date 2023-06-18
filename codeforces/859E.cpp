@@ -41,6 +41,8 @@ void testcase()
                     cout<<j<<" ";
 
                 }
+                cin>>ans;
+                if(sum<ans)
            } 
         }
         cout<<endl;
