@@ -21,9 +21,8 @@ int main ()
         {
             int c,b;
             cin>>c>>b;
-
+    
         int visited[n]={0};
-        int visitedb[n]={0}
         queue<int>q;
         q.push(c);
         visited[c]=1;
